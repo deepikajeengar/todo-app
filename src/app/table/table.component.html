@@ -1,0 +1,30 @@
+<div class="container">
+<div class="card mt-5">
+    <div class="card-header text-center">
+      ToDo Lists
+    </div>
+<div class="card-body">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sr No.</th>
+        <th scope="col">Title</th>
+        <th scope="col">Notes</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of notesList;let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{list.title}}</td>
+            <td>{{list.notes}}</td>
+            <td>
+              <button class="btn btn-primary me-1" (click)="onEdit(list,i)">Edit</button>
+              <button class="btn btn-danger" (click)="onDelete(i)">Delete</button>
+            </td>
+          </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>

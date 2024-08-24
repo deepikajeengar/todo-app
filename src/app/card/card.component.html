@@ -1,0 +1,20 @@
+<div class="container mt-5">
+<div class="card">
+    <div class="card-header text-center">
+      NOTES
+    </div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+            <textarea class="form-control" [(ngModel)]="notes" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        <a (click)="onSubmit()" class="btn btn-primary">Submit</a>
+    </div>
+  </div>
+</div>
