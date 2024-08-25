@@ -6,41 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  title: string = "";
-  notes: string = "";
-  notesList:any = [];
-  editData:any;
-  editIndex:number = 0;
+  a : number = 1;
+  b : number = 2;
+  c : any;
   
-  onSubmit() {
-    let tempObject = {
-      title:this.title,
-      notes: this.notes
-    }
-    console.log('this.editData',this.editData)
-    if(this.editData) {
-      this.notesList[this.editIndex] = tempObject;
-      this.editData = null;
-      this.editIndex = 0
-    } else {
-      this.notesList.push(tempObject)
-    }
-    console.log(this.notesList)
-    this.title = "";
-    this.notes = "";
+
+  add() {
+    this.c = this.a + this.b
+  }
+ 
+  sub() {
+    this.c = this.a - this.b
   }
 
-  onDelete(index:number) {
-    console.log(index)
-    this.notesList.splice(index,1)
-    // this.notesList.pop()
+  multiply() {
+    this.c = this.a * this.b
   }
 
-  onEdit(data:any,index:number) {
-    console.log(data)
-    this.title = data.title
-    this.notes = data.notes
-    this.editData = data
-    this.editIndex = index
+  divide() {
+    this.c = this.a / this.b
   }
 }
