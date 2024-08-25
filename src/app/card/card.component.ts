@@ -6,24 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  a : number = 1;
-  b : number = 2;
-  c : any;
-  
+  a : number = 0;
+  c : number = 0;
 
   add() {
-    this.c = this.a + this.b
+    this.c = this.a + this.c;
   }
  
   sub() {
-    this.c = this.a - this.b
+    
   }
 
   multiply() {
-    this.c = this.a * this.b
+    
   }
 
   divide() {
-    this.c = this.a / this.b
+   
+  }
+
+  addData(value:number) {
+    this.a = value
   }
 }
