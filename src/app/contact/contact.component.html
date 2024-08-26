@@ -1,0 +1,36 @@
+<div class="container" style="margin: 100px;">
+    <div class="card">
+        <div class="card-body text-center">
+            <div class="card-header" style="min-height: 50px;">
+                <h1>Contact</h1>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">FirstName</label>
+                <input type="text" [(ngModel)]="fname" class="form-control" id="exampleFormControlInput1" placeholder="FirstName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">LastName</label>
+                <input type="text" [(ngModel)]="lname" class="form-control" id="exampleFormControlInput1" placeholder="LastName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
+                <input type="number" [(ngModel)]="phone" class="form-control" id="exampleFormControlInput1" placeholder="+91..........">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Occupation</label>
+                <input type="text" [(ngModel)]="work" class="form-control" id="exampleFormControlInput1" placeholder="work">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" [(ngModel)]="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" [(ngModel)]="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary" (click)="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
