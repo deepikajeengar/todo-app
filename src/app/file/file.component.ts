@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  selector: 'app-file',
+  templateUrl: './file.component.html',
+  styleUrls: ['./file.component.css']
 })
-export class ContactComponent {
+export class FileComponent {
   fname: any;
   lname: any;
   phone: any;
@@ -14,6 +14,22 @@ export class ContactComponent {
   message: any;
   state: any = "";
   gender: any;
+  dob: any;
+  username: any;
+  password: any;
+  zip: any;
+  address: any;
+  city: any;
+  contactMethod: any;
+  contactTime: any;
+  profilePic: any;
+  favColor: any;
+  satisfaction: any;
+  interestSports: any;
+  interestMusic: any;
+  interestTech: any;
+  interestArt: any;
+  country: any;
 
   submit() {
 

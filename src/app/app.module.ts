@@ -7,6 +7,8 @@ import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
 import { FormComponent } from './form/form.component';
 import { ContactComponent } from './contact/contact.component';
+import { FileComponent } from './file/file.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ContactComponent } from './contact/contact.component';
     CardComponent,
     FormComponent,
     ContactComponent,
+    FileComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

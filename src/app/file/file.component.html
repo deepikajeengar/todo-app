@@ -1,0 +1,176 @@
+<div class="container" style="margin: 100px;">
+    <div class="card">
+        <div class="card-body text-center">
+            <div class="card-header" style="min-height: 50px;">
+                <h1>Detailed Contact Form</h1>
+            </div>
+            <div class="mb-3">
+                <label for="firstName" class="form-label"><b>First Name</b></label>
+                <input type="text" [(ngModel)]="fname" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" [(ngModel)]="lname" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" [(ngModel)]="dob" class="form-control" id="dob">
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" [(ngModel)]="username" class="form-control" id="username" placeholder="Username">
+            </div>
+
+            <!-- Password Input -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" [(ngModel)]="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Mobile Number</label>
+                <input type="number" [(ngModel)]="phone" class="form-control" id="phoneNumber" placeholder="+91..........">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div class="form-control" style="display: flex; justify-content: space-between; padding: 10px;">
+                    <div>
+                        <input type="radio" [(ngModel)]="gender" name="gender" value="Male" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" [(ngModel)]="gender" name="gender" value="Female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" [(ngModel)]="gender" name="gender" value="Other" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">State</label>
+                <select [(ngModel)]="state" class="form-control">
+                    <option value="">Please Select State</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Bihar">Bihar</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" [(ngModel)]="address" id="address" placeholder="Your Address" rows="2"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" [(ngModel)]="city" class="form-control" id="city" placeholder="City">
+            </div>
+            <div class="mb-3">
+                <label for="zipCode" class="form-label">Zip Code</label>
+                <input type="text" [(ngModel)]="zip" class="form-control" id="zipCode" placeholder="Zip Code">
+            </div>
+            <div class="mb-3">
+                <label for="occupation" class="form-label">Occupation</label>
+                <input type="text" [(ngModel)]="work" class="form-control" id="occupation" placeholder="Occupation">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" [(ngModel)]="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="contactMethod" class="form-label">Preferred Contact Method</label>
+                <select [(ngModel)]="contactMethod" class="form-control" id="contactMethod">
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                    <option value="SMS">SMS</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">Preferred Contact Time</label>
+                <input type="time" [(ngModel)]="contactTime" class="form-control" id="time">
+            </div>
+
+            <!-- File Upload -->
+            <div class="mb-3">
+                <label for="profilePic" class="form-label">Upload Profile Picture</label>
+                <input type="file" [(ngModel)]="profilePic" class="form-control" id="profilePic">
+            </div>
+
+            <!-- Color Picker -->
+            <div class="mb-3">
+                <label for="favColor" class="form-label">Favorite Color</label>
+                <input type="color" [(ngModel)]="favColor" class="form-control" id="favColor">
+            </div>
+
+            <!-- Range Slider -->
+            <div class="mb-3">
+                <label for="satisfaction" class="form-label">Satisfaction Level</label>
+                <input type="range" [(ngModel)]="satisfaction" class="form-range" id="satisfaction" min="0" max="100">
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="mb-3">
+                <label class="form-label">Select Your Interests</label>
+                <div class="form-control" style="padding: 10px;">
+                    <div>
+                        <input type="checkbox" [(ngModel)]="interestSports" id="sports">
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" [(ngModel)]="interestMusic" id="music">
+                        <label for="music">Music</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" [(ngModel)]="interestTech" id="tech">
+                        <label for="tech">Technology</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" [(ngModel)]="interestArt" id="art">
+                        <label for="art">Art</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="mb-3">
+                <label class="form-label">Preferred Contact Method</label>
+                <div class="form-control" style="padding: 10px;">
+                    <div>
+                        <input type="radio" [(ngModel)]="contactMethod" name="contactMethod" value="Phone" id="contactPhone">
+                        <label for="contactPhone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" [(ngModel)]="contactMethod" name="contactMethod" value="Email" id="contactEmail">
+                        <label for="contactEmail">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" [(ngModel)]="contactMethod" name="contactMethod" value="SMS" id="contactSMS">
+                        <label for="contactSMS">SMS</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Dropdown -->
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <select [(ngModel)]="country" class="form-control" id="country">
+                    <option value="">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                <textarea class="form-control" [(ngModel)]="message" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message here..."></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary" (click)="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
